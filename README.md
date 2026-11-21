@@ -23,7 +23,7 @@ This repo is the one place that holds everything about my live and recording rig
 
 | Device | MIDI channel |
 |---|---|
-| [MIDI Captain 10S](equipment/hardware/midi-captain-10s/README.md) | 16 (receive, CC20 = page switch) |
+| [MIDI Captain 10S](equipment/hardware/midi-captain-10s/README.md) | 16 (receive; page switching TODO) |
 | [HX Stomp](equipment/hardware/hx-stomp/README.md) | 1 |
 | [RC-600](equipment/hardware/rc-600/README.md) | 2 |
 | [BeatBuddy](equipment/hardware/beatbuddy/README.md) | 3 |

@@ -14,7 +14,9 @@ TODO: what this does in the live and recording setup.
 
 ## MIDI
 
-Receives external control on channel 16. CC20 switches pages.
+Receives external control on channel 16. The knob (encoder) sends CC20 on channel 1, per `page0.txt`.
+
+TODO: page switching over MIDI on channel 16 isn't confirmed yet. Which message does it and how?
 
 ## Connections
 
@@ -22,15 +24,16 @@ TODO: what plugs into it and where it goes (MIDI, USB, power).
 
 ## Files
 
-`files/` mirrors the pedal's drive (it shows up as MIDICAPTAIN when plugged into the computer). Page files live in `files/supersetup/` as `page1.txt`, `page2.txt`, and so on. The folder is empty until the files are copied over from the drive.
+`files/` mirrors the pedal's drive (it shows up as MIDICAPTAIN when plugged into the computer). Page files## Page file guidelines
 
-## Page file rules
+These are habits, not hard rules:
 
-The pedal silently skips a page file that breaks any of these:
+- Start every new page by copying a page you know works, then edit the copy.
+- Use one `[GlobalSetup]` block, LF line endings (the Mac/Linux kind, not Windows) and no comment lines. The repo's `.gitattributes` keeps page files LF automatically.
 
-- The whole file is one `[GlobalSetup]` block.
-- No comment lines.
-- LF line endings (the Mac/Linux kind, not Windows). The repo's `.gitattributes` keeps these files LF automatically.
+An older note said the pedal skips any page that breaks these. That came from one file that failed to load. `page2.txt` (MOM) has a lowercase `[globalsetup]` header and 11 comment lines, and it still loads on the pedal. So neither of those stops a page from loading. Why the original file failed is still unknown.
+
+these files LF automatically.
 - Start every new page by copying a page you know works, then edit the copy. Don't write one from scratch.
 
 ## Startup modes
