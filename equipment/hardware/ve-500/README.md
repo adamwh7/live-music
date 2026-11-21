@@ -14,7 +14,16 @@ TODO: what this does in the live and recording setup.
 
 ## MIDI
 
-Channel 4.
+Channel 4. Each assign is set to toggle mode, controlled by a CC (a numbered MIDI control message):
+
+| VE-500 assign | CC | Controls |
+|---|---|---|
+| Assign 1 | CC85 | Reverb (FX1) |
+| Assign 2 | none | Skipped: it wouldn't accept a CC |
+| Assign 3 | CC86 | Harmony |
+| Assign 4 | CC87 | Delay |
+
+The MIDI Captain's page3 "11.21.26" uses these on keys 1, 2 and 3.
 
 ## Connections
 
