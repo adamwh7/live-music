@@ -1,0 +1,2 @@
+# MIDI Captain page files must have LF line endings or the pedal skips them.
+equipment/hardware/midi-captain-10s/files/supersetup/*.txt text eol=lf
